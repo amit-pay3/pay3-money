@@ -1,0 +1,1795 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pay3 - Payment Rails for Agentic Economy</title>
+  <link rel="icon" href="/images/logo/pay3_logo.svg" type="image/icon type" />
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Pay3 powers agentic commerce and enterprise stablecoin payments. Accept, send and settle payments over stablecoin rails with instant, programmable and AI-native infrastructure." />
+  <meta name="keywords"
+    content="agentic payments, agentic economy payments, agentic commerce stablecoins, stablecoin rails agentic, agentic stablecoin payments, AI agent payments USDT, AI agent payments USDC, agentic payments gateway, stablecoin onramp for agents, instant agentic money movement, programmable payments, AI agent payments, Pay3, Transactions, Payments, Game, SDK" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="stylesheet" href="/styles/main4.css" />
+  <meta property='og:title' content='Global Payments' />
+  <meta property='og:image' content='./images/logo/pay3_logo.svg' />
+  <meta property='og:description'
+    content='Pay3 provides single click checkout for digital commerce. Accept cards, local payments, stablecoins and other cryptocurrencies' />
+  <meta property='og:url' content='https://pay3.money' />
+  <script is:inline src="/js/tailwindcss-3.4.3.js"></script>
+  <link rel="stylesheet"
+    href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&f[]=clash-grotesk@200,700,400,600,300,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+  <link rel="canonical" href="https://pay3.money/">
+  <link rel="preload" href="/images/features/fiat/image3.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/fiat/image1.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/fiat/image2.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/fiat/image5.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/crypto/image1.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/crypto/image3.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/crypto/image4.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/ecommerce/image1.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/ecommerce/image2.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/ecommerce/image3.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/features/ecommerce/image5.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/solutions/image1.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/solutions/image2.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/solutions/image3.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/solutions/image4.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/solutions/image5.webp" as="image" type="image/webp" />
+  <link rel="preload" href="/images/solutions/iphone_image.webp" as="image" type="image/webp" />
+  <script is:inline src="/js/mapdata.js"></script>
+  <script is:inline src="/js/worldmap.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3867DB",
+            secondary: "#0B237F",
+          },
+        },
+        fontFamily: {
+          clashdisplay: ["Clash Display", "sans-serif"],
+          grotesk: ["Clash Grotesk", "sans-serif"],
+          poppins: ["Poppins", "sans-serif"],
+        },
+      },
+    };
+  </script>
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What services does Pay3 offer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pay3 powers the payment rails for the agentic economy. Pay3 provides agentic commerce and instant payments solutions leveraging stablecoin rails. Pay3 offers stablecoin payment infrastructure, agentic AI payments, cross-border settlement, local payment acceptance, and global treasury management. Businesses can accept, send, and settle payments across 100+ stablecoins and digital assets, 30+ blockchains, 300+ local payment methods across 100+ countries. "
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What use cases does Pay3 support?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pay3 supports a wide range of stablecoin and agentic payment use cases, including agentic commerce, e-commerce checkouts, cross-border payments, global treasury operations, trading and brokerage platforms, remittances, invoice payments, subscription payments, payroll and in-game transactions across global digital ecosystems."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is agentic commerce and how does Pay3 handle autonomous payments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Agentic commerce refers to AI agents autonomously discovering, deciding, and executing transactions on behalf of users or businesses. These agents can complete actions such as purchasing products, paying for APIs, managing subscriptions, or executing business workflows based on predefined conditions and user-approved mandates. Pay3 provides the payment infrastructure layer for these autonomous transactions through secure, intent-bound, and policy-controlled payments. Its platform enables AI agents to transact using stablecoin rails with programmable spending controls, global settlement capabilities, and transparent audit trails for safe and scalable agent-driven commerce."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Which digital assets, blockchains are supported?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pay3 supports 100+ digital assets and stablecoins across 30+ major blockchain networks. Supported Layer-1 chains include Bitcoin, Ethereum, Solana, BNB Chain, Tron, and others, while supported Layer-2 networks include Arbitrum, Polygon, Base, Lightning Network, and more.This broad coverage enables businesses to accept, move and settle digital assets across the most widely used blockchain ecosystems through a single integration. Refer Coverage Map"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does Pay3 handle cross-border payments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pay3 enables fast and efficient cross-border payments by leveraging stablecoin rails and multi-chain payment infrastructure.With integrated on/off-ramp capabilities and support for multiple settlement currencies, businesses can move funds globally and settle in either fiat or digital currencies, improving payment speed, transparency and operational efficiency."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What does the onboarding process look like, and what support does Pay3 offer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Getting started with Pay3 is streamlined to reduce time-to-live deployment down to days. The onboarding experience consists of a swift compliance review, developer portal setup, sandbox API credentialing. Post-launch, Pay3 provides dedicated developer and operational support, including shared Slack/Telegram channels, robust technical documentation, and proactive transaction health monitoring to ensure consistent, high-uptime payment delivery. "
+            }
+        }
+    ]
+}
+  </script>
+</head>
+
+<body>
+  <header class="layout header md:pl-[20px] lg:pl-[80px] py-6 justify-between items-center flex sticky top-0 z-50 bg-white">
+    <a href="/"><img src="/images/logo/pay3-logo.svg" alt="Pay3" class="w-[110px] lg:w-[140px] " /></a>
+    <ul class="header-ul hidden md:flex md:gap-5 lg:gap-8 xl:gap-10 lg:mr-[100px]">
+      <li class="cursor-pointer" id="solutions">Solutions<span></span></li>
+      <li class="cursor-pointer" id="features">Features<span></span></li>
+      <li class="cursor-pointer" id="about">About<span></span></li>
+      <li class="cursor-pointer" id="faq">FAQ<span></span></li>
+      <li class="cursor-pointer" id="docs"><a href="https://docs.pay3.money" target="_blank">Docs</a><span></span></li>
+      <li class="cursor-pointer" id="case-studies"><a href="/case-studies/">Case Studies</a><span></span></li>
+      <li class="blog cursor-pointer" id="blog"><a href="https://medium.com/@pay3"
+          target="_blank">&nbsp;Blog</a><span></span></li>
+      <li class="cursor-pointer" id="contact-form"><a href="/contact-us/">Contact
+          Us</a><span></span></li>
+    </ul>
+    <nav class="menu--right" role="navigation">
+      <div class="menuToggle">
+        <input type="checkbox" id="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem">
+          <li class="solutions" data-target="landingLayoutContainer">Solutions</li>
+          <li class="features" data-target="sectionFeatContainer">Features</li>
+          <li class="about" data-target="section4Container">About</li>
+          <li class="cursor-pointer" data-target="faqContainer">FAQ</li>
+          <li class="documantation" data-target="documentation">
+            <a href="https://docs.pay3.money" target="_blank">
+              Docs
+            </a>
+          </li>
+          <li class="case-studies" data-target="case-studies"><a href="/case-studies/">Case Studies</a></li>
+          <li class="blog" data-target="blog"><a href="https://medium.com/@pay3/" target="_blank">Blog</a></li>
+          <li id="contact-form"><a href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Solutions Area Starts Here -->
+  <section class="layout flex flex-col md:flex-row items-center justify-center">
+    <div class="my-[40px] md:my-[100px] lg:my-[160px] pl-0 lg:pl-[60px] w-[100%] md:w-[50%] text-center md:text-left">
+      <div class="font-clashdisplay text-[30px] md:text-[34px] lg:text-[52px] leading-[38px] lg:leading-[60px]">
+        <h1>Payment Rails for<br />
+          <span class="font-medium">Agentic Economy</span>
+        </h1>
+      </div>
+      <div
+        class="font-grotesk text-[14px] md:text-[18px] lg:text-[22px] pt-4 max-w-[300px] m-auto md:m-0 md:max-w-[480px]">
+        Powering agentic commerce and instant payments through stablecoins
+      </div>
+      <a href="/contact-us/">
+        <button
+          class="before:ease relative overflow-hidden mt-[36px] md:mt-[58px] flex items-center mx-auto md:mx-0 gap-3 font-medium text-[14px] md:text-[18px] px-5 md:px-8 py-[12px] md:py-[18px] rounded-full text-white bg-gradient-to-r from-secondary to-primary transition-all before:absolute before:right-0 before:top-0 before:h-full before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40">
+          Get started
+          <img src="/images/icons/btn_arrow.svg" alt="go" />
+        </button>
+      </a>
+    </div>
+    <div
+      class="w-full flex flex-col h-[800px] md:h-auto md:flex-row md:w-[50%] mb-[60px] md:mb-0 overflow-hidden justify-center-[32px] px-[20px] rounded-[20px] md:pr-[35px]"
+      style="background-image: linear-gradient(to right bottom, #C6F7FF , #FBD8FF, #EFF2FF)">
+      <div class="w-full md:w-full max-w-[300px] self-center">
+        <img src="/images/solutions/image6.webp" alt="payment" loading="eager"
+          class="float-end relative w-full h-[400px] md:h-[440px] md:mt-[30px] mt-[20px] md:w-[284] md:mb-0" />
+      </div>
+
+      <div class="w-full md:w-full flex items-center justify-center" style="min-height:500px;">
+        <img src="/images/solutions/image7.webp" alt="payment" loading="eager"
+          class="float-end relative w-[240px] md:w-[235px] h-[300px] md:h-[310px] mb-[120px] md:mb-0 md:mt-0" />
+      </div>
+    </div>
+  </section>
+  <!-- Solutions Area Ends Here -->
+
+  <section class="relative pt-[61px] lg:pt-[104px] bg-[#F6F6F6]" data-scroll-to="landingLayoutContainer"
+    id="landingLayoutContainer">
+    <div>
+      <!-- Features Area Starts Here -->
+      <div class="tab m-auto p-1 md:p-2 rounded-full sticky top-20 z-40 !bg-[#12326C] !text-white">
+        <button class="tablinks" onclick="changeTab(event, 'countryPayments')">
+          Stablecoin Payments
+        </button>
+        <button class="tablinks" onclick="changeTab(event, 'ecommerce')">
+          Agentic AI Payments <!-- E-commerce -->
+        </button>
+        <button class="tablinks" onclick="changeTab(event, 'payments')">
+          Stablecoin Acceptance <!-- In-game Payments -->
+        </button>
+        <button class="tablinks" onclick="changeTab(event, 'gaming')">
+          Local Payments <!-- Stablecoin and Crypto Checkout -->
+        </button>
+      </div>
+
+      <div class="bg-[#F6F6F6]">
+        <div class="layout">
+          <div id="countryPayments"
+            class="tabcontent pt-[45px] pb-0 md:pt-[60px] md:pb-[60px] lg:pt-[100px] lg:pb-[100px]">
+            <div
+              class="flex flex-col-reverse gap-0 md:gap-[20px] lg:gap-0 md:flex-row justify-between max-w-[1100px] m-auto">
+              <div class="image-container-country md:mt-0 self-center max-w-full md:max-w-[307px] lg:max-w-full">
+                <img src="/images/features/fiat/image8.png" class="imgCountry1" alt="screen1" loading="eager">
+                <img src="/images/features/fiat/image9.png" class="imgCountry2" alt="screen1" loading="eager">
+              </div>
+              <div class="flex flex-col justify-between">
+                <div class="w-auto md:w-[560px] m-auto bg-white p-5 md:p-10 rounded-[24px]">
+                  <div class="font-grotesk flex gap-[10px] text-[14px] md:text-[22px] pt-4 pb-2">
+                    Enable Instant International Wires Leveraging Stablecoin Rails
+                  </div>
+                  <div class="font-grotesk flex gap-[10px] text-[14px] md:text-[22px] pt-4 pb-2">
+                    Settle and manage payments globally, in seconds. Stablecoin rails: Convert fiat → stablecoin → fiat.
+                  </div>
+                  <div class="font-grotesk flex gap-[10px] text-[14px] md:text-[22px] pt-4 pb-2">
+                    Robust platform - Intelligent router leveraging multi stablecoin and multi blockchain strategy
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="payments" class="tabcontent pt-[45px] pb-0 md:pt-[60px] md:pb-[60px] lg:pt-[100px] lg:pb-[100px]">
+            <div
+              class="flex flex-col-reverse gap-0 md:gap-[20px] lg:gap-0 md:flex-row justify-between max-w-[1100px] m-auto">
+              <div class="image-container md:mt-0 self-center max-w-full md:max-w-[307px] lg:max-w-full">
+                <img src="/images/features/fiat/image6.webp" class="img1" alt="screen1" loading="eager">
+                <img src="/images/features/fiat/image7.webp" class="img2" alt="screen1" loading="eager">
+                <img src="/images/features/fiat/image5.webp" class="img3" alt="screen2" loading="eager">
+              </div>
+              <div class="flex flex-col justify-between">
+                <div class="w-auto md:w-[560px] m-auto bg-white p-5 md:p-10 rounded-[24px]">
+                  <div class="font-clashdisplay text-[22px] lg:text-[36px] font-medium max-w-full md:max-w-[400px]">
+                    Fuel Your Payments with Digital Currencies
+                  </div>
+                  <div class="font-grotesk flex gap-[10px] text-[14px] md:text-[22px] pt-4 pb-2">
+                    Receive, send and settle payments in seconds - anywhere in the world
+                  </div>
+                  <!-- <img src="/images/features/payment_logo_list.svg" alt="payment logo list" loading="lazy" /> -->
+
+                  <div class=" flex gap-3 font-medium ">
+                    <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium ">100+</div>
+                    <div class="text-[13px] md:text-[18px] font-medium leading-[26px] md:pt-[16px]">Stablecoins &
+                      Cryptocurrencies</div>
+                  </div>
+                </div>
+                <!-- <div class="hidden md:flex gap-3 mt-[25px] lg:mt-[52px] items-center justify-center lg:justify-start">
+                  <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium">
+                    100+
+                  </div>
+                  <div class="font-clashdisplay text-[13px] md:text-[18px] font-medium leading-[26px]">
+                    Countries & Currencies Supported
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div id="gaming" class="tabcontent pt-[45px] pb-0 md:pt-[60px] md:pb-[60px] lg:pt-[100px] lg:pb-[100px]">
+            <div
+              class="flex flex-col-reverse gap-0 md:gap-[20px] lg:gap-0 md:flex-row justify-between max-w-[1100px] m-auto">
+              <div class="image-container-tokens md:mt-0 self-center max-w-full md:max-w-[307px] lg:max-w-full">
+                <img src="/images/features/crypto/image5.webp" class="imgtoken1" alt="screen1" loading="eager">
+                <img src="/images/features/crypto/image6.webp" class="imgtoken2" alt="screen1" loading="eager">
+                <img src="/images/features/crypto/image7.webp" class="imgtoken3" alt="screen1" loading="eager">
+              </div>
+              <div class="flex flex-col justify-between">
+                <div class="w-auto md:w-[560px] m-auto bg-white p-5 md:p-10 rounded-[24px]">
+                  <div class="font-clashdisplay text-[22px] lg:text-[36px] font-medium max-w-full md:max-w-[380px]">
+                    Go Global With Local Payments
+                  </div>
+                  <div class="font-grotesk flex gap-[10px] text-[14px] md:text-[22px] pt-4 pb-2">
+                    Instant payments, mobile wallets, bank transfers and QR codes
+                  </div>
+                  <!-- <img src="/images/features/payment_logo_list.svg" alt="payment logo list" loading="lazy" /> -->
+
+                  <!-- <div class="font-clashdisplay text-[14px] md:text-[24px] pt-4 font-medium leading-[36px]">
+                      300+ Local Payment methods across 100+ Countries
+                    </div> -->
+                  <div class=" flex gap-3">
+                    <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium ">300+</div>
+                    <div class="text-[13px] md:text-[18px] font-medium leading-[26px] md:pt-[16px]">Local Payment
+                      methods across</div>
+                  </div>
+                  <div class=" flex gap-3 font-clashdisplay font-medium ">
+                    <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium ">100+</div>
+                    <div class="text-[13px] md:text-[18px] font-medium leading-[26px] md:pt-[16px]">Countries</div>
+                  </div>
+
+                </div>
+                <!-- <div class="hidden md:flex gap-3 mt-[25px] lg:mt-[52px] items-center justify-center lg:justify-start">
+                  <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium">
+                    100+
+                  </div> -->
+                <!-- <div class="font-clashdisplay text-[13px] md:text-[18px] font-medium leading-[26px]">
+                    Countries & Currencies Supported
+                  </div> -->
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div id="ecommerce" class="tabcontent pt-[45px] pb-0 md:pt-[60px] md:pb-[60px] lg:pt-[100px] lg:pb-[100px]">
+            <div
+              class="flex flex-col-reverse gap-0 md:gap-[20px] lg:gap-0 md:flex-row justify-between max-w-[1100px] m-auto">
+              <div class="image-container-ecommerce md:mt-0 self-center max-w-full md:max-w-[307px] lg:max-w-full">
+                <img src="/images/features/ecommerce/image6.webp" class="img1" alt="screen1" loading="eager">
+                <img src="/images/features/ecommerce/image7.webp" class="img2" alt="screen1" loading="eager">
+                <img src="/images/features/ecommerce/image8.webp" class="img3" alt="screen1" loading="eager">
+              </div>
+              <div class="flex flex-col justify-between">
+                <div class="w-auto md:w-[560px] m-auto bg-white p-5 md:p-10 rounded-[24px]">
+                  <div class="font-clashdisplay text-[22px] lg:text-[36px] font-medium max-w-full md:max-w-[400px]">
+                    Monetize Autonomous Agents with Ease
+                  </div>
+                  <div class="font-grotesk gap-[10px] text-[14px] md:text-[22px] pt-4 pb-2">
+                    Real-time transactions, automated fraud checks and instant settlements
+                  </div>
+                  <!-- <img src="/images/features/payment_logo_list.svg" alt="payment logo list" loading="lazy" /> -->
+                  <div class=" flex gap-3 font-clashdisplay font-medium ">
+                    <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium ">100+</div>
+                    <div class="text-[13px] md:text-[18px] font-medium leading-[26px] md:pt-[16px]">Stablecoins &
+                      Cryptocurrencies</div>
+                  </div>
+                </div>
+                <!-- <div class="hidden md:flex gap-3 mt-[25px] lg:mt-[52px] items-center justify-center lg:justify-start">
+                  <div class="font-clashdisplay text-[18px] md:text-[28px] lg:text-[40px] font-medium">
+                    100+
+                  </div>
+                  <div class="font-clashdisplay text-[13px] md:text-[18px] font-medium leading-[26px]">
+                    Countries & Currencies Supported
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="font-poppins flex gap-[10px] bg-[#EAEAEA] justify-center items-center text-[13px] mt-[30px] rounded-[12px] md:text-[22px] p-3 mx-auto w-full max-w-[450px]">
+          <p class="text-[13px] md:text-[18px]">Just 5 lines of code to get started</p>
+          <img src="/images/icons/code_icon.svg" alt="code" class="w-[24px] md:w-[32px]" loading="lazy" />
+        </div>
+      </div>
+      <!-- Features Area Ends Here -->
+    </div>
+    <!-- Use Cases Section Start -->
+    <section class=" bg-white w-full flex flex-col items-center py-[12px] mt-20 px-4 md:px-8 lg:px-0">
+      <div class="w-full max-w-6xl rounded-lg bg-white flex flex-col items-center">
+        <h2 class="font-clashdisplay font-semibold text-[20px] md:text-[36px] text-center mt-6 mb-8">Use Cases</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-3 xl:flex xl:flex-wrap justify-center gap-6 px-4 pb-8">
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/agentic.png" alt="Microtransactions" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">Agentic Commerce</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/cart.png" alt="E-commerce checkouts" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">E-commerce<br>checkouts</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/payment.png" alt="Cross border payments" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">Cross border<br>payments</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/globe.png" alt="Cross border payments" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">Global Treasury<br>Efficiency</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/trading.png" alt="In-game payments" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">Trading & Brokerage<br>Platforms</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/subscription.png" alt="Subscriptions & many more"
+              class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">Subscriptions</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/money.png" alt="Subscriptions & many more" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">Remittances</span>
+          </div>
+
+          <div class="flex flex-col items-center bg-[#E5E9F6] rounded-xl py-6 px-3 w-[160px] h-[180px] shadow-sm">
+            <img src="/images/features/useCases/game.png" alt="In-game payments" class="w-10 h-10 mb-6" />
+            <span class="font-medium text-center text-base md:text-[18px]">In-game payments &<br>many more</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Use Cases Section End -->
+
+    <div class="bg-white" id="sectionAbout">
+      <section class="relative">
+        <div class="bg-white relative">
+          <div class="py-[50px] md:py-[80px] lg:py-[105px]">
+            <div class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] text-center">
+              The best coverage and <br />
+              <span class="font-medium">lowest cost experience</span>
+            </div>
+            <div class="mt-[72px] relative">
+              <!-- <img src="/images/features/map.svg" alt="map" class="m-auto" /> -->
+              <div id="map"></div>
+              <div class="blank"></div>
+            </div>
+          </div>
+          <div class="bg-[#264cb61f]">
+            <div id="paymentmethod"
+              class="payment-layout layout pt-[60px] lg:pt-[120px] pb-[60px] lg:pb-[143px] text-center">
+              <div class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] pb-[36px] lg:pb-[48px]">
+                Top Local Payment Methods
+              </div>
+              <img class="md:hidden" src="/images/payments/payment_method_small.png" />
+              <img class="hidden md:block" src="/images/payments/payment_method_large.png" />
+            </div>
+            <div id="gamingmethod"
+              class="payment-layout flex-col md:flex-row gap-[30px] md:gap-0 layout lg:pt-[120px] pb-[60px] lg:pb-[143px] text-center justify-center">
+              <div>
+                <div
+                  class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] pb-[36px] lg:pb-[48px] pr-0 md:pr-[10px] lg:pr-[85px]">
+                  Popular Stablecoins
+                </div>
+                <div
+                  class="flex gap-6 max-w-[535px] flex-wrap m-auto justify-center pr-0 md:pr-[10px] lg:pr-[85px] border-r border-[#00000030]">
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 5.png" alt="" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 9.png" alt="paypal" class="w-[50px] h-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 10.png" alt="" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 11.png" alt="" class="w-[50px] h-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 12.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 13.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 4.png" alt="" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 14.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] pb-[36px] lg:pb-[48px] pl-0 md:pl-[10px] lg:pl-[85px]">
+                  30+ Blockchains
+                </div>
+                <div class="flex gap-6 max-w-[535px] flex-wrap m-auto justify-center pl-0 md:pl-[10px] lg:pl-[85px]">
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/blockchain/blockchain 1.png" alt="" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/token 2.png" alt="" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/Solana_logo.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/blockchain/blockchain 4.png" alt="" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/bitcoin-logo.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/token/bitcoin-lightning-logo.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/blockchain/BSC_icon.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                  <span
+                    class="payment-method w-[62px] h-[62px] lg:w-[92px] lg:h-[92px] bg-white rounded-[16px] flex items-center justify-center">
+                    <img src="/images/payments/blockchain/blockchain 9.png" alt="" class="h-[50px] w-[50px]" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div id="ecommercemethod"
+              class="payment-layout layout pt-[60px] lg:pt-[120px] pb-[60px] lg:pb-[143px] text-center">
+              <div class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] pb-[36px] lg:pb-[48px]">
+                Top Local Payment Methods
+              </div>
+              <img class="md:hidden" src="/images/payments/payment_method_small.png" />
+              <img class="hidden md:block" src="/images/payments/payment_method_large.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Area Starts Here -->
+      <section id="sectionFeatContainer" data-scroll-to="sectionFeatContainer"
+        class="layout pt-[60px] md:pt-[125px] pb-[55px] md:pb-[91px] gap-[24px]">
+        <div class="md:flex md:gap-[40px]">
+          <div class="group w-full md:w-1/2">
+            <div
+              class="flex md:min-h-[300px] lg:min-h-0 cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/buy.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/buy_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Streamlined Checkout Experience
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  Integration with multiple payment and liquidity partners for a
+                  streamlined checkout experience<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/buy.svg" alt="buy" class="group-hover:hidden justify-self-end h-[120px]"
+                  loading="lazy" />
+                <img src="/images/icons/buy_white.svg" alt="buy"
+                  class=" hidden justify-self-end group-hover:block h-[120px]" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="group w-full md:w-1/2 mt-10 md:mt-0">
+            <div
+              class="flex md:min-h-[300px] lg:min-h-0 cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/shield.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/shield_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Secure and Robust
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  Robust security measures ensuring maximum protection by encrypting
+                  sensitive data<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/shield.svg" alt="shield" class="group-hover:hidden h-[120px] justify-self-end"
+                  loading="lazy" />
+                <img src="/images/icons/shield_white.svg" alt="shield"
+                  class=" hidden group-hover:block h-[120px] justify-self-end" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:flex md:gap-[40px]">
+          <div class="group w-full md:w-1/2 mt-10">
+            <div
+              class="flex md:min-h-[300px] lg:min-h-0 cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/check.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/check_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Lower Fee, High Success Rate
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  Optimal payment routing boosting approval rates and reducing Fees using our proprietary AI
+                  engine<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/check.svg" alt="buy" class="group-hover:hidden h-[120px] justify-self-end"
+                  loading="lazy" />
+                <img src="/images/icons/check_white.svg" alt="buy"
+                  class=" hidden group-hover:block h-[120px] justify-self-end" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="group w-full md:w-1/2 mt-10">
+            <div
+              class="flex md:min-h-[300px] lg:min-h-0 cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/link.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/link_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Payment Links
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  Generate secure payment links and easily share them to collect payments from customers
+                  worldwide.<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/link.svg" alt="shield" class="group-hover:hidden h-[120px] justify-self-end"
+                  loading="lazy" />
+                <img src="/images/icons/link_white.svg" alt="shield"
+                  class=" hidden group-hover:block h-[120px] justify-self-end" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:flex md:gap-[40px]">
+          <div class="group w-full md:w-1/2 mt-10">
+            <div
+              class="flex md:min-h-[300px] lg:min-h-0 cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/chart.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/chart_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Actionable Analytics
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  Intuitive dashboard displaying comprehensive data on user activity and transactions<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/chart.svg" alt="buy" class="group-hover:hidden h-[120px] justify-self-end"
+                  loading="lazy" />
+                <img src="/images/icons/chart_white.svg" alt="buy"
+                  class=" hidden group-hover:block h-[120px] justify-self-end" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="group w-full md:w-1/2 mt-10">
+            <div
+              class="flex md:min-h-[300px] lg:min-h-0 cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/message.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/message_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Dedicated Support
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  Comprehensive support for end user queries and developer integration<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/message.svg" alt="shield" class="group-hover:hidden h-[120px] justify-self-end"
+                  loading="lazy" />
+                <img src="/images/icons/message_white.svg" alt="shield"
+                  class=" hidden group-hover:block h-[120px] justify-self-end" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:flex">
+          <div class="group w-full mt-10">
+            <div
+              class="flex cursor-pointer px-5 py-[24px] md:pl-[32px] md:py-[20px] lg:py-0 rounded-[12px] border group-hover:border-[#FFF] border-[#00000014]  group-hover:bg-gradient-to-r from-secondary to-primary"
+              tabindex="0">
+              <div class="w-full lg:w-[70%]">
+                <div class="block lg:hidden">
+                  <img src="/images/icons/send.svg" alt="buy" class="group-hover:hidden h-[56px]" loading="lazy" />
+                  <img src="/images/icons/send_white.svg" alt="buy" class=" hidden group-hover:block h-[56px]"
+                    loading="lazy" />
+                </div>
+                <div
+                  class="pt-[25px] md:pt-[32px] pb-[10px] text-[18px] md:text-[20px] font-bold  group-hover:text-white">
+                  Comprehensive Coverage
+                </div>
+                <div class="text-[14px] md:text-4  group-hover:text-white">
+                  100+ fiat currencies, 100+ countries, 100+ cryptocurrencies, and popular local payment methods for a
+                  seamless transaction experience<br />
+                  <span class="hidden lg:block">&nbsp;</span>
+                </div>
+              </div>
+              <div class="hidden lg:block h-full w-[30%] self-end">
+                <img src="/images/icons/send.svg" alt="shield" class="group-hover:hidden h-[120px] justify-self-end"
+                  loading="lazy" />
+                <img src="/images/icons/send_white.svg" alt="shield"
+                  class=" hidden group-hover:block h-[120px] justify-self-end" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Area Ends Here -->
+
+      <section class="bg-[#264cb61f]">
+        <div class="layout pt-[40px] lg:pt-[70px] pb-[45px] lg:pb-[80px]">
+          <div class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] text-center font-medium">
+            We are backed by
+          </div>
+          <div
+            class="flex flex-wrap gap-[15px] justify-center lg:justify-between px-[10px] md:px-[40px] lg:px-0 max-w-[1070px] m-auto pt-[29px]">
+            <img src="/images/logo/leo_capital_logo.svg" alt="leo capital"
+              class="mix-blend-multiply w-[30%] md:w-auto" />
+            <img src="/images/logo/multiple_ventures.svg" alt="multiple ventures"
+              class="mix-blend-multiply w-[30%] md:w-auto" />
+            <img src="/images/logo/gemba_capitals.svg" alt="gemba capitals"
+              class="mix-blend-multiply w-[30%] md:w-auto" />
+            <img src="/images/logo/special_invest.svg" alt="special invest"
+              class="mix-blend-multiply w-[30%] md:w-auto" />
+            <img src="/images/logo/arka.svg" alt="arka" class="mix-blend-multiply w-[30%] md:w-auto" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Members Area Starts Here -->
+      <section class="layout py-[65px] lg:py-[130px]" id="section4Container" data-scroll-to="section4Container">
+        <div class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] text-center font-medium">
+          Meet Our Leadership
+        </div>
+        <div
+          class="font-grotesk text-[18px] lg:text-[22px] pt-[20px] px-0 md:px-[40px] lg:px-0 max-w-[840px] text-center m-auto opacity-90">
+          We are a team passionate about revolutionising global payments. From coding wizards to customer success, we
+          are dedicated to making payments simple and secure for all.
+        </div>
+        <div
+          class="flex justify-center max-w-[1200px] m-auto flex-wrap gap-[15px] md:gap-[25px] lg:gap-[49px] pt-[62px] lg:pt-[83px]">
+          <div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">
+            <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">
+                  <div class="h-full flex items-end justify-center">
+                    <img src="/images/team/priya.webp" alt="priya karnik" class="scale-105 object-cover rounded-[12px]"
+                      loading="lazy" />
+                  </div>
+                </div>
+                <div
+                  class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">
+                  Priya Karnik has extensive experience in payments and financial
+                  services. Her stints include global and regional business roles
+                  at Citibank, senior executive position at Paytm and founding
+                  Dvara Money: a financial services firm for the next billion in
+                  India. Priya holds an MBA from the Indian Institute of
+                  Management Calcutta, India and an engineering degree from the
+                  National Institute of Technology, Suratkal, India
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-[18px] md:text-[20px] font-medium">Priya Karnik</div>
+              <div class="text-4 opacity-80">Co-Founder</div>
+            </div>
+          </div>
+
+          <div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">
+            <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">
+                  <div class="h-full flex items-end">
+                    <img src="/images/team/rajiv.jpg" alt="Rajiv Thondanoor" class="h-full object-cover rounded-[12px]"
+                      loading="lazy" />
+                  </div>
+                </div>
+                <div
+                  class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">
+                  Rajiv is a senior executive who has more than 18 years of
+                  extensive global experience in Consumer Internet and Enterprise
+                  businesses. He has held various roles in Engineering and Product
+                  Management across Silicon Valley companies (Ask, Yahoo, CBS
+                  Interactive, BCG Digital Ventures) along with being a founding
+                  member of his company OpenInstall (acquired by AVG
+                  Technologies). His most recent stints include heading product
+                  management at Ola and later at Cleartrip.
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-[18px] md:text-[20px] font-medium">Rajiv Thondanoor</div>
+              <div class="text-4 opacity-80">Co-Founder</div>
+            </div>
+          </div>
+
+          <div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">
+            <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">
+                  <div class="h-full flex items-end">
+                    <img src="/images/team/ajitsensurendran.png" alt="Ajitsen Surendran"
+                      class="h-[92%] object-cover rounded-[12px]" loading="lazy" />
+                  </div>
+                </div>
+                <div
+                  class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">
+                  Ajit is a seasoned technologist with experience building
+                  platforms at scale and building teams across Walmart, Yahoo and
+                  early stage startups. Ajit was most recently a principal
+                  engineer at Walmart. Ajit has a Masters in computer science from
+                  IIT Kharagpur.
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-[17px] md:text-[18px] md:text-[20px] font-medium">Ajitsen Surendran</div>
+              <div class="text-4 opacity-80">Engineering Lead</div>
+            </div>
+          </div>
+
+          <div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">
+            <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">
+              <div class="flip-card-inner">
+                <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">
+                  <div class="h-full flex items-end">
+                    <img src="/images/team/parimal.png" alt="Parimal" class="h-[97%] object-cover rounded-[12px]"
+                      loading="lazy" />
+                  </div>
+                </div>
+                <div
+                  class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">
+                  With over a decade of expertise spanning Aerospace R&D, Payments, Blockchain, and IT Services, Parimal
+                  is a seasoned professional in Product and Sales. An early advocate of blockchain technology since
+                  2012, he brings visionary perspective to the industry. Parimal is also a distinguished alumnus of IIT
+                  Kharagpur, where he earned his engineering degree.
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="text-[18px] md:text-[20px] font-medium">Parimal</div>
+              <div class="text-4 break-keep max-w-[150px] md:max-w-[200px] opacity-80">Sales and Partnerships</div>
+            </div>
+          </div>
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/sairupesh.png" alt="Sai Rupesh" class="h-[90%] object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Sai Rupesh is responsible for Product Management at Pay3. He has-->
+          <!--        experience building consumer and enterprise blockchain-->
+          <!--        applications. Rupesh has an undergraduate degree in Information-->
+          <!--        Science and Engineering.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Sai Rupesh</div>-->
+          <!--    <div class="text-4 opacity-80">Product</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/mohitagarwal.png" alt="Mohit Agarwal" class="h-[92%] object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Mohit Agarwal is a skilled software developer with expertise in -->
+          <!--        Java - Spring Boot. Passionate about building scalable, user-friendly -->
+          <!--        solutions, Mohit Agarwal specializes in crafting seamless back-end -->
+          <!--        systems and dynamic front-end experiences. With a focus on innovation -->
+          <!--        and collaboration, Mohit Agarwal consistently delivers impactful results -->
+          <!--        that meet business and client needs. His other interests are trekking and travelling.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Mohit Agarwal</div>-->
+          <!--    <div class="text-4 opacity-80">Engineering</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/anubhutibaruah.png" alt="Anubuthi Baruah"-->
+          <!--            class="h-[92%] object-cover rounded-[12px]" loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Anubhuti is a graduate from University of Delhi with a degree in-->
+          <!--        Human Psychology. She is also a national-level athlete and has a-->
+          <!--        strong interest in poetry.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Anubuthi Baruah</div>-->
+          <!--    <div class="text-4 opacity-80">HR & Operations</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/aayushsaxena.png" alt="Aayush Saxena"-->
+          <!--            class="h-[92%] w-full object-cover rounded-[12px]" loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Aayush, a B.Tech graduate from SRM University, has over 3 years of -->
+          <!--        experience in backend development, specialising in scalable micro-services. -->
+          <!--        Previously at AppViewX, he contributed to building robust backend systems. -->
+          <!--        Outside work, he enjoys traveling, exploring mountains, cricket, and photography.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Aayush Saxena</div>-->
+          <!--    <div class="text-4 opacity-80">Engineering</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/srividhya.png" alt="Sri Vidhya" class="h-[92%] object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Sri Vidhya, an engineering graduate from Paavai Engineering College, -->
+          <!--        has three years of experience in lead generation and market research. -->
+          <!--        She loves traveling and exploring new places, which keeps her curious and open-minded.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Sri Vidhya</div>-->
+          <!--    <div class="text-4 opacity-80">Pre-Sales</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/chirag.png" alt="Chirag Agarwal" class="h-[92%] object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Chirag is an engineering graduate from BITS Pilani Goa. He has a-->
+          <!--        passion for blockchain technology. His experience spans projects-->
+          <!--        in Web3 payment systems, NFTs, DeFi, zkSNARKs, and oracles.-->
+          <!--        Beyond his technical expertise, Chirag's diverse interests-->
+          <!--        include exploring mountains, traveling, photography and sim-->
+          <!--        racing.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Chirag Agarwal</div>-->
+          <!--    <div class="text-4 opacity-80">Engineering</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/bhumik.png" alt="bmp" class="h-[92%] object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Bhumik is an experienced ReactJs developer. He believes in-->
+          <!--        transforming ideas into captivating digital experiences. He has-->
+          <!--        expertise in developing scalable and intuitive user interfaces-->
+          <!--        that drive user engagement. He is committed to staying-->
+          <!--        up-to-date with latest technologies and trends in frontend.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Bhumik Prajapati</div>-->
+          <!--    <div class="text-4 opacity-80">Engineering</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/chetan.png" alt="Chetan Kudnekar"-->
+          <!--            class="h-[92%] object-cover rounded-[12px]" loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Chetan possesses a strong passion for crafting design systems-->
+          <!--        within the dynamic realm of web3. His expertise lies in-->
+          <!--        designing intuitive and efficient business-facing applications-->
+          <!--        and SaaS products. What truly sets Chetan apart is his-->
+          <!--        unwavering belief in the importance of the feedback-->
+          <!--        loop—embracing the process of learning and unlearning to-->
+          <!--        continually evolve and innovate. With a solid academic-->
+          <!--        foundation from Goa University and a wealth of practical-->
+          <!--        experience, Chetan is poised to make a significant impact in-->
+          <!--        shaping the future of web3 design-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Chetan Kudnekar</div>-->
+          <!--    <div class="text-4 opacity-80">Design</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/premkumar.png" alt="Prem Kumar" class="h-[115%] w-full object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Prem graduated from CCET Pondicherry with a degree in engineering and -->
+          <!--        has 3 years of experience working in lead generation and market research. -->
+          <!--        He’s developed a strong foundation in analysing data and spotting opportunities. -->
+          <!--        Outside of work, Prem enjoys traveling and discovering new places, which keeps -->
+          <!--        him curious and open to new ideas.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Prem Kumar</div>-->
+          <!--    <div class="text-4 opacity-80">Pre-Sales</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/alok1.png" alt="Alok" class="h-[92%] w-full object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Alok's motto is "carpe diem!" (seize the day!), turning nothing into something remarkable. He has 6-->
+          <!--        years of experience selling B2B solutions, having worked with small, medium, and enterprise brands.-->
+          <!--        Alok enjoys playing chess and reading non-fiction books.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Alok Subramanay</div>-->
+          <!--    <div class="text-4 opacity-80">Sales</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/yogesh.png" alt="Yogesh" class="h-[92%] w-full object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        Yogesh handles Quality Assurance with a focus on both manual and automation testing. -->
+          <!--        He holds an engineering degree from Pune University and has experience with tools like Selenium, -->
+          <!--        Java, Rest Assured, and Postman.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Yogesh</div>-->
+          <!--    <div class="text-4 opacity-80">Quality Assurance</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/sampreetha.png" alt="Sampreetha" class="h-[92%] w-full object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--        With a Bachelor's degree in Information Science and Engineering from VTU, I bring over 4 years of diverse experience across Customer Success, Risk, and Compliance functions. At Pay3, I serve as a Client Onboarding Specialist—ensuring a seamless and efficient onboarding journey for every client, while aligning closely with compliance and operational standards. Beyond work, I'm a passionate biker who finds freedom and inspiration on the open road. Exploring new places, people, and cultures fuels both my personal and professional growth.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Sampreetha</div>-->
+          <!--    <div class="text-4 opacity-80">Operations</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+
+          <!--<div class="team-card flex flex-col gap-[15px] md:gap-[25px] relative">-->
+          <!--  <div class="flip-card h-[190px] w-[155px] md:h-[250px] md:w-[215px] lg:h-[284px] lg:w-[234px]">-->
+          <!--    <div class="flip-card-inner">-->
+          <!--      <div class="flip-card-front bg-[#EBE8E2] rounded-[12px]">-->
+          <!--        <div class="h-full flex items-end">-->
+          <!--          <img src="/images/team/shruthi.png" alt="Shruthi" class="h-[92%] w-full object-cover rounded-[12px]"-->
+          <!--            loading="lazy" />-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--      <div-->
+          <!--        class="flip-card-back bg-[#EBE8E2] rounded-[12px] text-[14px] md:text-[18px] font-grotesk overflow-y-auto p-4 text-start">-->
+          <!--         Shruthi graduated with a degree in Electronics and Communication Engineering and began her career exploring the intersection of technology and design. At Pay3, she leads marketing — shaping how the brand communicates its mission, products, and impact to the world.-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--  <div>-->
+          <!--    <div class="text-[18px] md:text-[20px] font-medium">Shruthi</div>-->
+          <!--    <div class="text-4 opacity-80">Marketing</div>-->
+          <!--  </div>-->
+          <!--</div>-->
+        </div>
+      </section>
+      <!-- Team Members Area Ends Here -->
+      <!-- FAQ Start -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-[40px]" id="faqContainer" data-scroll-to="faqContainer">
+        <h2 class="font-clashdisplay text-[24px] md:text-[28px] lg:text-[36px] text-center font-medium">Frequently Asked
+          Questions</h2>
+        <div id="faqWrapper" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gray-100 rounded-lg p-6">
+            <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(1)">
+              <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+                What services does Pay3 offer?
+              </h3>
+              <div class="flex-shrink-0">
+                <!-- Plus Icon -->
+                <svg id="icon-plus-1" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <!-- Minus Icon -->
+                <svg id="icon-minus-1" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </button>
+            <div id="answer-1" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+              style="height: 0;">
+              <p>Pay3 powers the payment rails for the agentic economy. Pay3 provides agentic commerce and instant
+                payments solutions leveraging stablecoin rails. </p>
+              <p>Pay3 offers stablecoin payment infrastructure, agentic AI payments, cross-border settlement, local
+                payment acceptance, and global treasury management. </p>
+              <p>Businesses can accept, send, and settle payments across 100+ stablecoins and digital assets, 30+
+                blockchains, 300+ local payment methods across 100+ countries. </p>
+            </div>
+          </div>
+          <!-- FAQ Item 2 -->
+          <div class="bg-gray-100 rounded-lg p-6">
+            <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(2)">
+              <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+                What use cases does Pay3 support?
+              </h3>
+              <div class="flex-shrink-0">
+                <!-- Plus Icon -->
+                <svg id="icon-plus-2" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <!-- Minus Icon -->
+                <svg id="icon-minus-2" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </button>
+            <div id="answer-2" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+              style="height: 0;">
+              <p>Pay3 supports a wide range of stablecoin and agentic payment use cases, including <strong>agentic
+                  commerce,
+                  e-commerce checkouts, cross-border payments, global treasury operations, trading and brokerage
+                  platforms, remittances, invoice payments, subscription payments, payroll and in-game
+                  transactions</strong> across
+                global digital ecosystems.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 3 -->
+          <div class="bg-gray-100 rounded-lg p-6">
+            <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(3)">
+              <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+                What is agentic commerce and how does Pay3 handle autonomous payments?
+              </h3>
+              <div class="flex-shrink-0">
+                <!-- Plus Icon -->
+                <svg id="icon-plus-3" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <!-- Minus Icon -->
+                <svg id="icon-minus-3" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </button>
+            <div id="answer-3" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+              style="height: 0;">
+              <p>Agentic commerce refers to AI agents autonomously discovering, deciding, and executing transactions on
+                behalf of users or businesses. These agents can complete actions such as purchasing products, paying for
+                APIs, managing subscriptions, or executing business workflows based on predefined conditions and
+                user-approved mandates.</p>
+              <p>Pay3 provides the payment infrastructure layer for these autonomous transactions through secure,
+                intent-bound, and policy-controlled payments. Its platform enables AI agents to transact using
+                stablecoin rails with programmable spending controls, global settlement capabilities, and transparent
+                audit trails for safe and scalable agent-driven commerce.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 4 -->
+          <div class="bg-gray-100 rounded-lg p-6">
+            <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(4)">
+              <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+                Which digital assets, blockchains are supported?
+              </h3>
+              <div class="flex-shrink-0">
+                <!-- Plus Icon -->
+                <svg id="icon-plus-4" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <!-- Minus Icon -->
+                <svg id="icon-minus-4" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </button>
+            <div id="answer-4" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+              style="height: 0;">
+              <p>Pay3 supports 100+ digital assets and stablecoins across 30+ major blockchain networks. Supported
+                Layer-1 chains include Bitcoin, Ethereum, Solana, BNB Chain, Tron, and others, while supported Layer-2
+                networks include Arbitrum, Polygon, Base, Lightning Network, and more.This broad coverage enables
+                businesses to accept, move and settle digital assets across the most widely used blockchain ecosystems
+                through a single integration.</p>
+              <a id="coverageMap" data-target="sectionAbout" class="text-blue-500 hover:underline cursor-pointer">Refer
+                Coverage Map</a>
+            </div>
+          </div>
+          <!-- FAQ Item 5 -->
+          <div class="bg-gray-100 rounded-lg p-6">
+            <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(5)">
+              <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+                How does Pay3 handle cross-border payments?
+              </h3>
+              <div class="flex-shrink-0">
+                <!-- Plus Icon -->
+                <svg id="icon-plus-5" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <!-- Minus Icon -->
+                <svg id="icon-minus-5" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </button>
+            <div id="answer-5" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+              style="height: 0;">
+              <p>Pay3 enables fast and efficient cross-border payments by leveraging stablecoin rails and multi-chain
+                payment infrastructure.With integrated on/off-ramp capabilities and support for multiple settlement
+                currencies, businesses can move funds globally and settle in either fiat or digital currencies,
+                improving payment speed, transparency and operational efficiency.</p>
+            </div>
+          </div>
+          <!-- FAQ Item 6 -->
+          <div class="bg-gray-100 rounded-lg p-6">
+            <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(6)">
+              <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+                What does the onboarding process look like, and what support does Pay3 offer?
+              </h3>
+              <div class="flex-shrink-0">
+                <!-- Plus Icon -->
+                <svg id="icon-plus-6" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <!-- Minus Icon -->
+                <svg id="icon-minus-6" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </button>
+            <div id="answer-6" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+              style="height: 0;">
+              <p>Getting started with Pay3 is streamlined to reduce time-to-live deployment down to days. The
+                onboarding experience consists of a swift compliance review, developer portal setup, sandbox API
+                credentialing.</p>
+              <p>Post-launch, Pay3 provides dedicated developer and operational support, including shared Slack/Telegram
+                channels, robust technical documentation, and proactive transaction health monitoring to ensure
+                consistent, high-uptime payment delivery. </p>
+            </div>
+          </div>
+
+          <!-- Add more FAQ items as needed -->
+        </div>
+      </section>
+      <!-- FAQ End -->
+      <!-- Sticky Bottom Footer Starts Here -->
+      <div id="stickyContent2"
+        class="sticky z-40 bottom-12 text-white bg-gradient-to-r from-secondary to-primary py-5 px-[15px] lg:px-0">
+        <div class="max-w-[1200px] m-auto flex justify-between items-center">
+          <div class="font-clashdisplay text-[14px] md:text-[18px] lg:text-[22px]">
+            Begin your journey to
+            <span class="font-medium">Elevate your payment experience!</span>
+          </div>
+          <a class="w-auto md:w-[26%] lg:w-auto" href="/contact-us/">
+            <button
+              class="before:ease relative overflow-hidden flex items-center gap-3 font-clashdisplay font-semibold text-[16px] lg:text-[20px] px-0 lg:px-6 py-[10px] rounded-0 md:rounded-full text-white bg-transparent transition-all border border-transparent lg:border-white before:absolute before:right-0 before:top-0 before:h-full before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40">
+              Get Started
+              <img src="/images/icons/btn_arrow.svg" alt="go" />
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Sticky Bottom Footer Ends Here -->
+    </div>
+  </section>
+
+  <!-- Footer Area Starts Here -->
+  <div class="footer" id="footer" data-scroll-to="section5Container">
+    <div class="footer_group">
+      <div>
+        <img src="/images/logo/pay3.svg" loading="lazy" alt="" class="mask-group-icon1" />
+      </div>
+      <div class="second">
+        <div class="section_country">
+          <div class="market-street-5007-container">
+            <p class="nation">USA</p>
+            <p class="market-street">2261 Market Street</p>
+            <p class="market-street">#5007, San Francisco,</p>
+            <p class="market-street">CA 94114</p>
+          </div>
+          <div class="indiqube-crystal-73-container">
+            <p class="nation">U.A.E</p>
+            <p class="market-street">Meydan Grandstand,</p>
+            <p class="market-street">6th floor, Meydan Road,</p>
+            <p class="market-street">Nad Al Sheba,</p>
+            <p class="market-street">Dubai</p>
+          </div>
+          <div class="indiqube-crystal-73-container">
+            <p class="nation">INDIA</p>
+            <p class="market-street">Bhive,</p>
+            <p class="market-street">48, Church Street,</p>
+            <p class="market-street">Bengaluru,</p>
+            <p class="market-street">KA 560001</p>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-us">
+            <p class="nation">Contact us</p>
+            <p class="market-street">hello@pay3.money</p>
+          </div>
+          <div class="follow-us">
+            <p class="nation">Follow Us</p>
+            <div class="icon">
+              <a href="https://twitter.com/pay3money" target="_blank"><img class="frame-icon" alt=""
+                  src="/images/icons/twitter-x-logo.jpg" style="height: 28px; width: 28px" /></a>
+              <a href="https://www.linkedin.com/company/pay3" target="_blank"><img class="frame-icon" loading="lazy"
+                  alt="" src="/images/icons/linkedIn.png" /></a>
+              <a href="https://t.me/pay3_money" target="_blank"><img class="frame-icon" loading="lazy" alt=""
+                  src="/images/icons/telegram.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="privacy-policy">
+      <div class="link_tag">
+        <a id="btn1" target="_blank" href="/privacy_policy.html" class="privacy" style="color: white">Privacy Policy</a>
+        <a id="btn2" target="_blank" href="/terms_of_conditions.html" class="terms-of-service"
+          style="color: white">Terms of service</a>
+      </div>
+      <div class="copyright-2023-all">
+        Copyright ©2026 All rights reserved
+      </div>
+    </div>
+  </div>
+  <!-- Footer Area Ends Here -->
+
+  <div class="bottom" id="alertCookie">
+    This site uses cookies. To find out more, read our <a class="privacy_policy_a" target="_blank"
+      href="/privacy_policy.html">Privacy Policy</a>
+    <div class="cookies-btns">
+      <button class="agree-btn" onclick="acceptCookie()">
+        I Agree
+      </button>
+      <button class="reject-btn" onclick="rejectCookie()">
+        Reject Cookies
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function loadGoogleTagManager() {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start': new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NJFBMPTV');
+    }
+
+    function setCookieConsent(consent) {
+      localStorage.setItem('isCookieAccepted', consent);
+      hideCookieAlert();
+      updateStickyContent();
+      if (consent === 'true') {
+        loadGoogleTagManager();
+      }
+    }
+
+    function hideCookieAlert() {
+      document.getElementById('alertCookie').style.display = 'none';
+    }
+
+    function updateStickyContent() {
+      const stickyContentIds = ['stickyContent', 'stickyContent2'];
+      stickyContentIds.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.classList.remove('bottom-12');
+          element.classList.add('bottom-0');
+        }
+      });
+    }
+
+    function acceptCookie() {
+      setCookieConsent('true');
+    }
+
+    function rejectCookie() {
+      setCookieConsent('false');
+    }
+
+    if (localStorage.getItem('isCookieAccepted') === 'true') {
+      hideCookieAlert();
+      updateStickyContent();
+      loadGoogleTagManager();
+    }
+  </script>
+
+  <script>
+    function changeTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      paymentlayout = document.getElementsByClassName("payment-layout");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      for (i = 0; i < paymentlayout.length; i++) {
+        paymentlayout[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(
+          " active-tab",
+          ""
+        );
+      }
+      if (tabName === "countryPayments") {
+        document.getElementById("countryPayments").style.display = "block";
+        document.getElementById("gamingmethod").style.display = "flex";
+        evt.currentTarget.className += " active-tab";
+      } else if (tabName === "payments") {
+        document.getElementById("payments").style.display = "block";
+        document.getElementById("gamingmethod").style.display = "flex";
+        evt.currentTarget.className += " active-tab";
+      } else if (tabName === "gaming") {
+        document.getElementById("gaming").style.display = "block";
+        document.getElementById("paymentmethod").style.display = "block";
+        evt.currentTarget.className += " active-tab";
+      } else if (tabName === "ecommerce") {
+        document.getElementById("ecommerce").style.display = "block";
+        document.getElementById("ecommercemethod").style.display = "block";
+        evt.currentTarget.className += " active-tab";
+      }
+    }
+
+    window.onload = function () {
+      document.getElementById("countryPayments").style.display = "block";
+      document.getElementById("gamingmethod").style.display = "flex";
+      document.querySelector(".tablinks").classList.add("active-tab");
+    };
+  </script>
+  <script>
+    window.addEventListener("load", () => {
+      const params = new URLSearchParams(window.location.search);
+      const targetId = params.get("scrollTo");
+
+      if (!targetId) return;
+
+      const el = document.getElementById(targetId);
+      if (!el) return;
+
+      setTimeout(() => {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 300);
+    });
+
+    var solutions = document.getElementById("solutions");
+    if (solutions) {
+      solutions.addEventListener("click", function () {
+        var anchor = document.querySelector(
+          "[data-scroll-to='landingLayoutContainer']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+
+    var features = document.getElementById("features");
+    if (features) {
+      features.addEventListener("click", function () {
+        var anchor = document.querySelector(
+          "[data-scroll-to='sectionFeatContainer']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+
+    var about = document.getElementById("about");
+    if (about) {
+      about.addEventListener("click", function () {
+        var anchor = document.querySelector(
+          "[data-scroll-to='section4Container']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+
+    var faq = document.getElementById("faq");
+    if (faq) {
+      faq.addEventListener("click", function () {
+        var anchor = document.querySelector(
+          "[data-scroll-to='faqContainer']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+
+    var contact = document.getElementById("contact");
+    if (contact) {
+      contact.addEventListener("click", function () {
+        var anchor = document.querySelector(
+          "[data-scroll-to='section5Container']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+  </script>
+  <script>
+    // FAQ
+    // var faqs = [
+    //   {
+    //     question: `Q1: What services does Pay3 offer?`,
+    //     answer: `<p>Pay3 powers the payment rails for the agentic economy. Pay3 provides agentic commerce and instant payments solutions leveraging stablecoin rails.&nbsp;</p><p>Pay3 offers stablecoin payment infrastructure, agentic AI payments, cross-border settlement, local payment acceptance, and global treasury management. </p><p>Businesses can accept, send, and settle payments across 100+ stablecoins and digital assets, 30+ blockchains, 300+ local payment methods across 100+ countries. </p>`
+    //   },
+    //   {
+    //     question: `Q2: What use cases does Pay3 support?`,
+    //     answer: `<p>Pay3 supports a wide range of stablecoin and agentic payment use cases, including <strong>agentic commerce, e-commerce checkouts, cross-border payments, global treasury operations, trading and brokerage platforms, remittances, invoice payments, subscription payments, payroll and in-game transactions</strong> across global digital ecosystems.</p>`
+    //   },
+    //   {
+    //     question: `Q3: What is agentic commerce and how does Pay3 handle autonomous payments?`,
+    //     answer: `<p>Agentic commerce refers to AI agents autonomously discovering, deciding, and executing transactions on behalf of users or businesses. These agents can complete actions such as purchasing products, paying for APIs, managing subscriptions, or executing business workflows based on predefined conditions and user-approved mandates.</p> <p>Pay3 provides the payment infrastructure layer for these autonomous transactions through secure, intent-bound, and policy-controlled payments. Its platform enables AI agents to transact using stablecoin rails with programmable spending controls, global settlement capabilities, and transparent audit trails for safe and scalable agent-driven commerce.</p>`
+    //   },
+    //   {
+    //     question: `Q4: Which digital assets, blockchains are supported?`,
+    //     answer: `<p>Pay3 supports 100+ digital assets and stablecoins across 30+ major blockchain networks. Supported Layer-1 chains include Bitcoin, Ethereum, Solana, BNB Chain, Tron, and others, while supported Layer-2 networks include Arbitrum, Polygon, Base, Lightning Network, and more.This broad coverage enables businesses to accept, move and settle digital assets across the most widely used blockchain ecosystems through a single integration.</p> <a id="coverageMap" data-target="sectionAbout" class="text-blue-500 hover:underline cursor-pointer">Refer Coverage Map</a>`
+    //   },
+    //   {
+    //     question: `Q5: How does Pay3 handle cross-border payments?`,
+    //     answer: `<p>Pay3 enables fast and efficient cross-border payments by leveraging stablecoin rails and multi-chain payment infrastructure.With integrated on/off-ramp capabilities and support for multiple settlement currencies, businesses can move funds globally and settle in either fiat or digital currencies, improving payment speed, transparency and operational efficiency.</p>`
+    //   },
+    //   {
+    //     question: `Q6: What does the onboarding process look like, and what support does Pay3 offer?`,
+    //     answer: `<p>Getting started with Pay3 is streamlined to reduce time-to-live deployment down to days. The onboarding experience consists of a swift compliance review, developer portal setup, sandbox API credentialing.</p> <p>Post-launch, Pay3 provides dedicated developer and operational support, including shared Slack/Telegram channels, robust technical documentation, and proactive transaction health monitoring to ensure consistent, high-uptime payment delivery. </p>`
+    //   }
+    // ]
+    // var faqWrapper = document.getElementById("faqWrapper");
+    // faqWrapper.innerHTML = faqs.map((faq, idx) => {
+    //   const questionNumber = idx + 1;
+    //   return `<div class="bg-gray-100 rounded-lg p-6">
+    //         <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(${questionNumber})">
+    //           <h3 class="text-[18px] lg:text-[22px] font-medium text-gray-800">
+    //             ${faq.question}
+    //           </h3>
+    //           <div class="flex-shrink-0">
+    //             <!-- Plus Icon -->
+    //             <svg id="icon-plus-1" class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+    //               <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v8a1 1 0 11-2 0V6a1 1 0 011-1z" clip-rule="evenodd" />
+    //               <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+    //             </svg>
+    //             <!-- Minus Icon -->
+    //             <svg id="icon-minus-1" class="w-6 h-6 text-gray-500 hidden" fill="currentColor" viewBox="0 0 20 20">
+    //               <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+    //             </svg>
+    //           </div>
+    //         </button>
+    //         <div id="answer-${questionNumber}" class="mt-4 text-gray-600 hidden overflow-hidden h-0 transition-all duration-300"
+    //           style="height: 0;">
+    //           ${faq.answer}
+    //         </div>
+    //       </div>`}).join('');
+    function toggleFAQ(id) {
+      const answer = document.getElementById(`answer-${id}`);
+      const iconPlus = document.getElementById(`icon-plus-${id}`);
+      const iconMinus = document.getElementById(`icon-minus-${id}`);
+
+      // Check if the answer is currently visible
+      if (answer.style.height === '0px' || answer.style.height === '' || answer.style.height === '0') {
+        // Expand the answer
+        answer.classList.remove('hidden');
+        const scrollHeight = answer.scrollHeight;
+        answer.style.height = scrollHeight + 'px';
+
+        iconPlus.classList.add('hidden');
+        iconMinus.classList.remove('hidden');
+      } else {
+        // Collapse the answer
+        answer.style.height = '0px';
+        setTimeout(() => {
+          answer.classList.add('hidden');
+        }, 300);
+
+        iconPlus.classList.remove('hidden');
+        iconMinus.classList.add('hidden');
+      }
+    }
+  </script>
+  <script>
+    const checkbox = document.getElementById("checkbox");
+    const listItems = document.querySelectorAll(".menuItem li");
+
+    listItems.forEach((item) => {
+      item.addEventListener("click", function () {
+        checkbox.checked = false;
+        const body = document.body;
+        body.style.overflow = "auto";
+        const targetId = this.getAttribute("data-target");
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+
+    const coverageMapText = document.getElementById("coverageMap");
+    if (coverageMapText) {
+      coverageMapText.addEventListener("click", function () {
+        const body = document.body;
+        body.style.overflow = "auto";
+        const targetId = this.getAttribute("data-target");
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      });
+    }
+
+    checkbox.addEventListener("change", function () {
+      const body = document.body;
+
+      if (checkbox.checked) {
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "auto";
+      }
+    });
+  </script>
+  <script>
+    function changeMainImage(imageSrc, clickedImage) {
+      document.getElementById("main-image").src = imageSrc;
+
+      clickedImage.style.display = 'none';
+
+      const icons = document.querySelectorAll('.icon');
+      icons.forEach(icon => {
+        if (icon !== clickedImage) {
+          icon.style.display = 'block';
+        }
+      });
+      const cardTitle = document.getElementById("card-title");
+
+      switch (imageSrc) {
+        case './images/solutions/image1.webp':
+          cardTitle.textContent = "Car Upgrade";
+          break;
+        case './images/solutions/image2.webp':
+          cardTitle.textContent = "Ops Upgrade";
+          break;
+        case './images/solutions/image3.webp':
+          cardTitle.textContent = "Car Upgrade";
+          break;
+        case './images/solutions/image4.webp':
+          cardTitle.textContent = "Eclipse Upgrade";
+          break;
+        case './images/solutions/image5.webp':
+          cardTitle.textContent = "Gun Upgrade";
+          break;
+        default:
+          cardTitle.textContent = "Car Upgrade";
+      }
+    }
+  </script>
+</body>
+
+</html>

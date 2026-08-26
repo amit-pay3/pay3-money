@@ -1,0 +1,16 @@
+{
+  "title": "Stablecoin Payments for a Global Digital Commerce Platform",
+  "geography": "Global",
+  "industry": "Digital Commerce",
+  "highlight": "Expanded stablecoin payment coverage globally through a single integration",
+  "thumbnail": "/images/case-studies/stablecoin-payments-global-digital-commerce/thumbnail.webp",
+  "customerProfile": "A global digital commerce platform serving customers across multiple markets wanted to introduce stablecoins as an additional payment rail. The objective was to expand payment coverage globally through a single integration while maintaining a consistent checkout and settlement experience.",
+  "challenge": "The platform needed to support multiple stablecoins and blockchain networks while dealing with the operational complexity of blockchain payments. Key challenges included transaction reconciliation, payment exceptions, refunds, irreversible transfers, and identifying fraudulent or high-risk transactions without creating additional friction for legitimate customers.",
+  "solutionImage": "/images/case-studies/stablecoin-payments-global-digital-commerce/solutionImage.webp",
+  "businessImpact": "<ul><li>Added stablecoins as a new payment option without requiring separate integrations for each network</li><li>Reduced operational dependency on manual transaction review and reconciliation</li><li>Established consistent controls for blockchain-based payment risk</li><li>Simplified merchant settlement by converting stablecoin proceeds into the required settlement currency</li><li>Created a scalable foundation for expanding stablecoin payments across additional markets and networks</li></ul>",
+  "implementationImage": "/images/case-studies/stablecoin-payments-global-digital-commerce/implementationImage.webp",
+  "meta": {
+    "title": "Pay3 - Enabling Stablecoin Payments for a Global Digital Commerce Platform",
+    "description": "Expanded stablecoin payment coverage globally through a single integration"
+  }
+}

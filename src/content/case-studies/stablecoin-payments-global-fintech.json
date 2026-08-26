@@ -1,0 +1,20 @@
+{
+  "title": "Enabling Stablecoin Payments for a Global Fintech Platform",
+  "slug": "stablecoin-payments-global-fintech",
+  "geography": "Global",
+  "industry": "Fintech",
+  "highlight": "Launched a scalable, enterprise-grade stablecoin payment rail through a single integration",
+  "thumbnail": "/images/case-studies/stablecoin-payments-global-fintech/thumbnail.webp",
+  "customerProfile": "A global fintech platform wanted to introduce stablecoins as an additional payment rail for its customers without disrupting its existing payment experience. The objective was to launch a scalable, enterprise-grade solution through a single integration while maintaining operational efficiency and customer trust.",
+  "challenge": "Supporting stablecoin payments required much more than enabling deposits and withdrawals. The platform needed to process high-value customer transactions while managing payment exceptions, irreversible blockchain transfers, fraud scenarios, and operational workflows at scale, all without increasing manual effort or impacting the customer experience.",
+  "solution": "Pay3 provided a unified Stablecoin Payments API that enabled the platform to: accept and process stablecoin deposits and withdrawals through a single integration; automatically reconcile incoming transactions against merchant instructions; handle underpayments, overpayments, and refund requests through configurable workflows; automate the handling of payment exceptions, disputes, and operational reviews; and provide complete transaction visibility and end-to-end audit trails across the payment lifecycle.",
+  "solutionImage": "/images/case-studies/stablecoin-payments-global-fintech/solution.webp",
+  "businessImpact": "<ul><li>Introduced stablecoins as an additional payment option through a single API integration</li><li>Automated reconciliation for the majority of incoming transactions</li><li>Standardized workflows for payment exceptions and refund requests</li><li>Reduced manual intervention in transaction processing and investigations</li><li>Improved operational visibility with end-to-end transaction tracking</li></ul>",
+  "implementationHighlights": "",
+  "implementationImage": "/images/case-studies/stablecoin-payments-global-fintech/implementation.webp",
+  "meta": {
+    "title": "Pay3 - Enabling Stablecoin Payments for a Global Fintech Platform",
+    "description": "Launched a scalable, enterprise-grade stablecoin payment rail through a single integration",
+    "ogImage": "https://pay3.money/images/case-studies/stablecoin-payments-global-fintech/thumbnail.webp"
+  }
+}

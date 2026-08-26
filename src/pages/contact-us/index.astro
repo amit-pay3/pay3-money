@@ -1,0 +1,154 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pay3 | Contact Us</title>
+    <link rel="icon" href="/public/pay3_logo.svg" type="image/icon type">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta property='og:title' content='Global Payments' />
+    <meta property='og:image' content='/images/logo/pay3_logo.svg' />
+    <meta property='og:description'
+        content='Pay3 provides single click checkout for digital commerce. Accept cards, local payments, stablecoins and other cryptocurrencies' />
+    <meta property='og:url' content='https://pay3.money' />
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfMM9osAAAAAOXy4z2BtN2KfHKN07TTeUZ8Z9li"></script>
+    <link rel="stylesheet" href="/styles/contact_us.css" />
+    <link rel="stylesheet"
+        href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&f[]=clash-grotesk@200,700,400,600,300,500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+    <script is:inline src="/js/tailwindcss-3.4.3.js"></script>
+</head>
+
+<body class="font-clashdisplay bg-gradient-to-r from-secondary to-primary">
+    <header
+        class="layout header md:pl-[20px] lg:pl-[80px] py-6 justify-between items-center flex bg-white sticky top-0">
+        <img src="/images/logo/pay3-logo.svg" alt="Pay3" class="w-[30%] md:w-[10%]" />
+        <ul class="header-ul hidden md:flex gap-10 mr-[40px] lg:mr-[100px]">
+            <li class="cursor-pointer" id="solutions"><a
+                    href="/?scrollTo=landingLayoutContainer">Solutions</a><span></span></li>
+            <li class="cursor-pointer" id="features"><a
+                    href="/?scrollTo=sectionFeatContainer">Features</a><span></span></li>
+            <li class="cursor-pointer" id="about"><a
+                    href="/?scrollTo=section4Container">About</a><span></span></li>
+            <li class="cursor-pointer" id="docs"><a href="https://docs.pay3.money" target="_blank">Docs</a><span></span>
+            </li>
+            <li class="cursor-pointer" id="case-studies"><a href="/case-studies/">Case Studies</a><span></span></li>
+            <li class="blog cursor-pointer" id="blog"><a href="https://medium.com/@pay3"
+                    target="_blank">&nbsp;Blog</a><span></span></li>
+            <!-- <li class="cursor-pointer" id="contact-form"><a href="/contact-us/">Contact
+                    Us</a><span></span></li> -->
+        </ul>
+        <nav class="menu--right" role="navigation">
+            <div class="menuToggle">
+                <input type="checkbox" id="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="menuItem">
+                    <li class="solutions" data-target="landingLayoutContainer"><a
+                            href="/?scrollTo=landingLayoutContainer">Solutions</a></li>
+                    <li class="features" data-target="sectionFeatContainer"><a
+                            href="/?scrollTo=sectionFeatContainer">Features</a></li>
+                    <li class="about" data-target="section4Container"><a
+                            href="/?scrollTo=section4Container">About</a></li>
+                    <li class="documantation" data-target="documentation">
+                        <a href="https://docs.pay3.money" target="_blank">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="case-studies" data-target="case-studies"><a href="/case-studies/">Case Studies</a>
+                    </li>
+                    <li class="blog" data-target="blog"><a href="https://medium.com/@pay3/" target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="shell">
+        <div id="form" class="card md:max-w-[540px] lg:max-w-[600px] bg-white rounded-[45px]">
+            <div class="text-[30px] md:text-[34px] leading-[38px] lg:leading-[60px]">
+                <h1>Get started with Pay3</h1>
+                <p class="sub">Share a few quick details so we can tailor the right solution for you.</p>
+            </div>
+
+
+            <div class="field">
+                <label>Name <span class="req">*</span></label>
+                <input type="text" id="fname" placeholder="e.g. Jane Smith">
+            </div>
+
+            <div class="field">
+                <label>Company email <span class="req">*</span></label>
+                <input type="email" id="cemail" placeholder="e.g. jane@yourcompany.com">
+            </div>
+
+            <div class="field">
+                <label>Company website <span class="req">*</span></label>
+                <input type="url" id="cwebsite" placeholder="e.g. https://yourcompany.com">
+            </div>
+
+            <div class="field">
+                <label>Key countries <span class="req">*</span></label>
+                <div class="multi-wrap" id="corridors">
+                </div>
+            </div>
+
+            <!-- revert -->
+            <!-- <div class="field">
+                <label>List key countries <span class="req">*</span></label>
+                <div class="multi-wrap" id="corridors" style="max-height:200px; overflow-y: scroll;">
+                </div>
+            </div> -->
+
+            <div class="field">
+                <label>Payment method(s) <span class="req">*</span></label>
+                <div class="multi-wrap" id="payment-methods">
+                    <label><input type="checkbox" value="Stablecoins / Crypto"> Stablecoins / Crypto</label>
+                    <label><input type="checkbox" value="Cards"> Cards</label>
+                    <label><input type="checkbox" value="Bank Transfer"> Bank Transfer</label>
+                    <label><input type="checkbox" value="Local Payment Methods / Wallets"> Local Payment Methods /
+                        Wallets</label>
+                    <label><input type="checkbox" value="Other" id="pm-other-checkbox"> Other <input type="text"
+                            id="pm-other-input" placeholder="Please specify"
+                            class="hidden border rounded px-2 py-1 text-sm"></label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Comments (optional)</label>
+                <textarea id="comments" class="p-4"
+                    placeholder="Tell us about your payment volume, use case, or any specific questions…"></textarea>
+            </div>
+
+            <button class="submit-btn bg-gradient-to-r from-secondary to-primary rounded-full"
+                id="submit-btn">Submit</button>
+        </div>
+    </div>
+    <div id="form-success"
+        class="card hidden md:max-w-[540px] lg:max-w-[600px] bg-white rounded-[45px] flex flex-col items-center">
+        <img src="/images/payments/payment-success.svg" alt="Pay3" class="w-[30%] md:w-[40%]" />
+        <div class="text-[30px] md:text-[34px] leading-[38px] text-center">
+            <h1 class="m-4">Thank You!</h1>
+            <p class="sub">Please check your inbox for confirmation. Our sales team will reach out shortly.</p>
+        </div>
+    </div>
+</body>
+<script is:inline src="/js/contact_us.js"></script>
+  <script>
+    function loadGoogleTagManager() {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start': new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NJFBMPTV');
+    }
+    if (localStorage.getItem('isCookieAccepted') === 'true') {
+      loadGoogleTagManager();
+    }
+  </script>
+
+</html>

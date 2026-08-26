@@ -1,0 +1,288 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+const dir = path.join(process.cwd(), 'src', 'content', 'case-studies');
+const caseStudies = fs.readdirSync(dir)
+  .filter(f => f.endsWith('.json'))
+  .map(f => {
+    const d = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));
+    d.slug = d.slug || f.replace('.json', '');
+    return d;
+  });
+
+const geographies = [...new Set(caseStudies.map(c => c.geography))].sort();
+const industries = [...new Set(caseStudies.map(c => c.industry))].sort();
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pay3 - Case Studies</title>
+  <link rel="icon" href="/images/logo/pay3_logo.svg" type="image/icon type" />
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Explore how Pay3 powers agentic commerce and stablecoin payments for fintechs, e-commerce platforms, gaming studios, and more." />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="stylesheet" href="/styles/main4.css" />
+  <link rel="stylesheet" href="/styles/case-studies.css" />
+  <meta property='og:title' content='Pay3 Case Studies' />
+  <meta property='og:image' content='/images/logo/pay3_logo.svg' />
+  <meta property='og:description'
+    content='See how leading companies use Pay3 to power instant, programmable stablecoin payments across the globe.' />
+  <meta property='og:url' content='https://pay3.money/case-studies/' />
+  <script is:inline src="/js/tailwindcss-3.4.3.js"></script>
+  <link rel="stylesheet"
+    href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&f[]=clash-grotesk@200,700,400,600,300,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+  <script is:inline>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#3867DB",
+            secondary: "#0B237F",
+          },
+        },
+        fontFamily: {
+          clashdisplay: ["Clash Display", "sans-serif"],
+          grotesk: ["Clash Grotesk", "sans-serif"],
+          poppins: ["Poppins", "sans-serif"],
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-poppins">
+  <!-- Sticky Header -->
+  <header class="layout header md:pl-[20px] lg:pl-[80px] py-6 justify-between items-center flex sticky top-0 z-50 bg-white">
+    <a href="/"><img src="/images/logo/pay3-logo.svg" alt="Pay3" class="w-[110px] lg:w-[140px] " /></a>
+    <ul class="header-ul hidden md:flex md:gap-5 lg:gap-8 xl:gap-10 lg:mr-[100px]">
+      <li class="cursor-pointer"><a href="/?scrollTo=landingLayoutContainer">Solutions</a><span></span></li>
+      <li class="cursor-pointer"><a href="/?scrollTo=sectionFeatContainer">Features</a><span></span></li>
+      <li class="cursor-pointer"><a href="/?scrollTo=section4Container">About</a><span></span></li>
+      <li class="cursor-pointer"><a href="/?scrollTo=faqContainer">FAQ</a><span></span></li>
+      <li class="cursor-pointer"><a href="https://docs.pay3.money" target="_blank">Docs</a><span></span></li>
+      <li class="cursor-pointer font-medium text-primary"><a href="/case-studies/">Case Studies</a><span></span></li>
+      <li class="blog cursor-pointer"><a href="https://medium.com/@pay3" target="_blank">Blog</a><span></span></li>
+      <li class="cursor-pointer"><a href="/contact-us/">Contact Us</a><span></span></li>
+    </ul>
+    <nav class="menu--right" role="navigation">
+      <div class="menuToggle">
+        <input type="checkbox" id="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menuItem">
+          <li><a href="/?scrollTo=landingLayoutContainer">Solutions</a></li>
+          <li><a href="/?scrollTo=sectionFeatContainer">Features</a></li>
+          <li><a href="/?scrollTo=section4Container">About</a></li>
+          <li><a href="/?scrollTo=faqContainer">FAQ</a></li>
+          <li><a href="https://docs.pay3.money" target="_blank">Docs</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="https://medium.com/@pay3/" target="_blank">Blog</a></li>
+          <li><a href="/contact-us/">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Listing View -->
+  <section id="listing-view">
+    <!-- Hero Banner -->
+    <div class="bg-gradient-to-r from-secondary to-primary text-white py-16 md:py-24 px-5">
+      <div class="max-w-[1100px] m-auto text-center">
+        <div class="inline-block bg-white/20 text-white text-xs md:text-sm font-medium px-4 py-1.5 rounded-full mb-4">
+          Customer Stories
+        </div>
+        <h1 class="font-clashdisplay text-[28px] md:text-[40px] lg:text-[52px] leading-[1.15] mb-4">
+          See How Leading Companies<br class="hidden md:block" /> Move Money with Pay3
+        </h1>
+        <p class="font-grotesk text-[12px] md:text-[16px] opacity-80 max-w-[800px] m-auto">
+          Discover how enterprises including banks and payment providers, e-commerce platforms, gaming studios, and global businesses are 
+          using Pay3’s Stablecoin and Agentic Payment solutions to move money faster, reduce costs, and scale seamlessly across markets worldwide.
+        </p>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="max-w-[1100px] m-auto px-5 py-8">
+      <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+        <!-- <div class="text-sm text-gray-500 font-grotesk" id="results-count"></div> -->
+        <div class="flex flex-wrap gap-3">
+          <select id="geography-filter" class="cs-filter-select">
+            <option value="all">All Geographies</option>
+            {geographies.map(g => <option value={g}>{g}</option>)}
+          </select>
+          <select id="industry-filter" class="cs-filter-select">
+            <option value="all">All Industries</option>
+            {industries.map(i => <option value={i}>{i}</option>)}
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="max-w-[1100px] m-auto px-5 pb-10">
+      <div id="cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {caseStudies.map(cs => (
+          <a href={`/case-studies/${cs.slug}/`} data-geography={cs.geography} data-industry={cs.industry} class="cs-card group block bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg hover:border-primary/20 transition-all duration-300">
+            <div class="h-40 bg-gradient-to-br from-secondary/5 to-primary/5 flex items-center justify-center overflow-hidden">
+              <img src={cs.thumbnail} alt={cs.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
+            <div class="p-5">
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="cs-tag cs-tag-geo">{cs.geography}</span>
+                <span class="cs-tag cs-tag-ind">{cs.industry}</span>
+              </div>
+              <p class="text-xs text-gray-500 font-grotesk mb-2 line-clamp-2">{cs.highlight}</p>
+              <h3 class="font-clashdisplay font-medium text-[15px] md:text-[16px] text-gray-900 leading-snug mb-3 line-clamp-2">{cs.title}</h3>
+              <span class="inline-flex items-center gap-1 text-primary text-sm font-medium font-grotesk group-hover:gap-2 transition-all">
+                Read <span class="text-lg leading-none">&rarr;</span>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div id="no-results" class="hidden text-center py-20 text-gray-400 font-grotesk text-lg">
+        No case studies match your filters. Try adjusting your selection.
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="max-w-[1100px] m-auto px-5 pb-16 flex justify-center">
+      <!-- Pagination rendered by JS -->
+    </div>
+  </section>
+
+  <!-- Sticky Bottom CTA -->
+  <div id="stickyContent2"
+    class="sticky z-40 bottom-0 text-white bg-gradient-to-r from-secondary to-primary py-5 px-[15px] lg:px-0">
+    <div class="max-w-[1200px] m-auto flex justify-between items-center">
+      <div class="font-clashdisplay text-[14px] md:text-[18px] lg:text-[22px]">
+        Begin your journey to
+        <span class="font-medium">Elevate your payment experience!</span>
+      </div>
+      <a class="w-auto md:w-[26%] lg:w-auto" href="/contact-us/">
+        <button
+          class="before:ease relative overflow-hidden flex items-center gap-3 font-clashdisplay font-semibold text-[16px] lg:text-[20px] px-0 lg:px-6 py-[10px] rounded-0 md:rounded-full text-white bg-transparent transition-all border border-transparent lg:border-white before:absolute before:right-0 before:top-0 before:h-full before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40">
+          Get Started
+          <img src="/images/icons/btn_arrow.svg" alt="go" />
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" id="footer">
+    <div class="footer_group">
+      <div>
+        <img src="/images/logo/pay3.svg" loading="lazy" alt="" class="mask-group-icon1" />
+      </div>
+      <div class="second">
+        <div class="section_country">
+          <div class="market-street-5007-container">
+            <p class="nation">USA</p>
+            <p class="market-street">2261 Market Street</p>
+            <p class="market-street">#5007, San Francisco,</p>
+            <p class="market-street">CA 94114</p>
+          </div>
+          <div class="indiqube-crystal-73-container">
+            <p class="nation">U.A.E</p>
+            <p class="market-street">Meydan Grandstand,</p>
+            <p class="market-street">6th floor, Meydan Road,</p>
+            <p class="market-street">Nad Al Sheba,</p>
+            <p class="market-street">Dubai</p>
+          </div>
+          <div class="indiqube-crystal-73-container">
+            <p class="nation">INDIA</p>
+            <p class="market-street">Bhive,</p>
+            <p class="market-street">48, Church Street,</p>
+            <p class="market-street">Bengaluru,</p>
+            <p class="market-street">KA 560001</p>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-us">
+            <p class="nation">Contact us</p>
+            <p class="market-street">hello@pay3.money</p>
+          </div>
+          <div class="follow-us">
+            <p class="nation">Follow Us</p>
+            <div class="icon">
+              <a href="https://twitter.com/pay3money" target="_blank"><img class="frame-icon" alt=""
+                  src="/images/icons/twitter-x-logo.jpg" style="height: 28px; width: 28px" /></a>
+              <a href="https://www.linkedin.com/company/pay3" target="_blank"><img class="frame-icon" loading="lazy"
+                  alt="" src="/images/icons/linkedIn.png" /></a>
+              <a href="https://t.me/pay3_money" target="_blank"><img class="frame-icon" loading="lazy" alt=""
+                  src="/images/icons/telegram.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="privacy-policy">
+      <div class="link_tag">
+        <a target="_blank" href="/privacy_policy.html" class="privacy" style="color: white">Privacy Policy</a>
+        <a target="_blank" href="/terms_of_conditions.html" class="terms-of-service" style="color: white">Terms of service</a>
+      </div>
+      <div class="copyright-2023-all">
+        Copyright ©2026 All rights reserved
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Alert -->
+  <div class="bottom" id="alertCookie">
+    This site uses cookies. To find out more, read our <a class="privacy_policy_a" target="_blank"
+      href="/privacy_policy.html">Privacy Policy</a>
+    <div class="cookies-btns">
+      <button class="agree-btn" onclick="acceptCookie()">I Agree</button>
+      <button class="reject-btn" onclick="rejectCookie()">Reject Cookies</button>
+    </div>
+  </div>
+
+  <script is:inline>
+    function acceptCookie() { localStorage.setItem('isCookieAccepted', 'true'); document.getElementById('alertCookie').style.display = 'none'; var el = document.getElementById('stickyContent2'); if (el) { el.classList.remove('bottom-12'); el.classList.add('bottom-0'); } }
+    function rejectCookie() { localStorage.setItem('isCookieAccepted', 'false'); document.getElementById('alertCookie').style.display = 'none'; var el = document.getElementById('stickyContent2'); if (el) { el.classList.remove('bottom-12'); el.classList.add('bottom-0'); } }
+    if (localStorage.getItem('isCookieAccepted') !== null) {
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('alertCookie').style.display = 'none';
+        var el = document.getElementById('stickyContent2'); if (el) { el.classList.remove('bottom-12'); el.classList.add('bottom-0'); }
+      });
+    }
+  </script>
+
+  <script is:inline>
+    // Client-side filtering for case study cards
+    function applyFilters() {
+      var geo = document.getElementById('geography-filter').value;
+      var ind = document.getElementById('industry-filter').value;
+      var cards = document.querySelectorAll('#cards-grid .cs-card');
+      var visibleCount = 0;
+
+      cards.forEach(function(card) {
+        var cardGeo = card.getAttribute('data-geography');
+        var cardInd = card.getAttribute('data-industry');
+        var matches = (geo === 'all' || cardGeo === geo) && (ind === 'all' || cardInd === ind);
+        card.style.display = matches ? '' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      var noResults = document.getElementById('no-results');
+      if (noResults) {
+        noResults.classList.toggle('hidden', visibleCount > 0);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var geoFilter = document.getElementById('geography-filter');
+      var indFilter = document.getElementById('industry-filter');
+      if (geoFilter) geoFilter.addEventListener('change', applyFilters);
+      if (indFilter) indFilter.addEventListener('change', applyFilters);
+    });
+  </script>
+</body>
+</html>

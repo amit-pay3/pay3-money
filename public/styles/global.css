@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: var(--font-poppins);
+  background: #fff;
+  color: #000;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-clash-display: 'Clash Display', 'sans-serif';
+  --font-grotesk: 'Clash Grotesk', 'sans-serif';
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --font-size-smi-6: 12.6px;
+  --font-size-base-9: 16.9px;
+  --font-size-smi-1: 12.1px;
+  --font-size-mini-3: 14.3px;
+  --font-size-26xl: 45px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-3xs-5: 9.5px;
+  --font-size-5xl: 24px;
+  --font-size-3xl-9: 22.9px;
+  --font-size-8xl-5: 27.5px;
+  --font-size-37xl: 56px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --buy-btn: #003370;
+  --color-dodgerblue: #0085ff;
+  --sky-blue-button: #43b0f1;
+  --color-gray-100: #100f16;
+
+  /* Gaps */
+  --gap-10xl-4: 29.4px;
+
+  /* border radiuses */
+  --br-8xs-6: 4.6px;
+  --br-7xs-3: 5.3px;
+  --br-lg: 18px;
+  --br-sm: 14px;
+  --br-8xs-1: 4.1px;
+  --br-8xs-4: 4.4px;
+}
