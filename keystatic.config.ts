@@ -2,11 +2,10 @@ import { config, collection, fields } from '@keystatic/core';
 
 export default config({
   storage: {
-    kind: 'github',
-    repo: {
-      owner: 'pay3-inc',
-      name: 'pay3-money',
-    }
+    kind: 'cloud',
+  },
+  cloud: {
+    project: 'pay3-money/pay3-money',
   },
   collections: {
     caseStudies: collection({
