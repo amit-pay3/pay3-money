@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^11.1.4",
     "@astrojs/react": "^6.0.3",
     "@keystatic/astro": "^6.0.0",
     "@keystatic/core": "^0.6.7",
